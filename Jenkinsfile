@@ -1,6 +1,4 @@
-withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-    // some block
-    }
+
 
 pipeline {
     agent any
@@ -43,4 +41,9 @@ pipeline {
     }
      
    
-}
+
+
+
+withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+    // some block
+    }}
